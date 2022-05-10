@@ -629,9 +629,9 @@ const runTests = async () => {
   debug(`requiring cypress dependency, cwd is ${process.cwd()}`)
   debug(`working directory ${workingDirectory}`)
   const cypressModulePath =
-    require.resolve('cypress', {
+    require.resolve('cy2', {
       paths: [workingDirectory]
-    }) || 'cypress'
+    }) || 'cy2'
   debug(`resolved cypress ${cypressModulePath}`)
 
   const cypress = require(cypressModulePath)
