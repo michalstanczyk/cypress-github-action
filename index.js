@@ -503,8 +503,8 @@ const runTestsUsingCommandLine = async () => {
   let cmd = []
   // we need to split the command prefix into individual arguments
   // otherwise they are passed all as a single string
-  const parts = commandPrefix.split(' ')
-  cmd = cmd.concat(parts)
+  // const parts = commandPrefix.split(' ')
+  // cmd = cmd.concat(parts)
   debug(`with concatenated command prefix: ${cmd.join(' ')}`)
 
   // push each CLI argument separately
